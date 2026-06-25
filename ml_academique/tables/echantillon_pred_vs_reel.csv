@@ -1,0 +1,16 @@
+origin_city,destination_city,logistics_company,duree_reelle_j,duree_predite_j,erreur_j
+Lagos,Jos,Red Star Express,5,6.6,1.6
+Kano,Abeokuta,Ace Couriers,6,7.5,1.5
+Port Harcourt,Lagos,Ace Couriers,10,11.5,1.5
+Abuja,Warri,Fedex Nigeria,6,3.0,-3.0
+Lagos,Abeokuta,Dispatch Riders,16,13.5,-2.5
+Lagos,Ibadan,DHL Nigeria,13,11.5,-1.5
+Port Harcourt,Abuja,Ace Couriers,15,12.5,-2.5
+Lagos,Jos,DHL Nigeria,10,9.5,-0.5
+Port Harcourt,Onitsha,Fedex Nigeria,6,3.5,-2.5
+Port Harcourt,Jos,GIG Logistics,1,4.4,3.4
+Abuja,Enugu,Ace Couriers,16,12.5,-3.5
+Lagos,Enugu,Dispatch Riders,7,8.5,1.5
+Lagos,Kaduna,Ace Couriers,8,11.5,3.5
+Lagos,Calabar,Red Star Express,14,13.5,-0.5
+Port Harcourt,Kaduna,Dispatch Riders,0,3.5,3.5

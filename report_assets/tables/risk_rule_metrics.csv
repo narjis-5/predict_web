@@ -1,0 +1,8 @@
+﻿metrique,valeur
+Taux r?el de d?passement,0.6291424968474149
+Pr?cision,0.6291424968474149
+Rappel,1.0
+F1-score,0.7723603037363284
+AUC-ROC,0.5095425403011875
+PR-AUC,0.6441020885097324
+Taux de fausses alertes,0.999999999999966

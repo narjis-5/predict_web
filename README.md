@@ -153,7 +153,16 @@ ml_academique/                                 Figures et tables de l'étude
 1. Pousser ce dépôt sur GitHub (voir instructions Git ci-dessous).
 2. Aller sur <https://share.streamlit.io> et se connecter avec GitHub.
 3. **New app** → choisir le dépôt, la branche `main` et le fichier `app.py`.
-4. **Deploy**. Streamlit installe `requirements.txt` et publie une URL publique.
+4. **Advanced settings → Python version : choisir `3.13`** (important, voir ci-dessous).
+5. **Deploy**. Streamlit installe `requirements.txt` et publie une URL publique.
+
+> **⚠️ Version de Python — obligatoire.** Les dépendances sont épinglées et ne disposent de
+> *wheels* précompilés que jusqu'à **Python 3.13**. Si Streamlit déploie avec **Python 3.14**,
+> `pyarrow` n'a pas de wheel et pip tente de le compiler depuis les sources, ce qui échoue
+> (`cmake` absent de l'image). Le dépôt fixe la version via le fichier [`.python-version`](.python-version)
+> (`3.13`), mais **la source de vérité est le sélecteur « Python version » des Advanced settings** :
+> assure-toi qu'il est sur `3.13`. Pour une app déjà déployée : menu **⋮ → Settings → Python version → 3.13 → Reboot** ;
+> si le champ n'est pas modifiable, supprimer l'app et la redéployer en réglant `3.13` dans les Advanced settings.
 
 ---
 
