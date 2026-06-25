@@ -3,7 +3,9 @@
 # IMPORTANT : scikit-learn doit rester en 1.7.2, version exacte ayant servi a
 # entrainer/serialiser les deux bundles .joblib. Un autre numero majeur/mineur
 # peut faire echouer le chargement (InconsistentVersionWarning -> erreur).
-streamlit==1.51.0
+# streamlit 1.52.0+ relache sa contrainte pyarrow (pyarrow>=7.0, sans le cap
+# <22 qu'avait 1.51.0). Indispensable pour autoriser pyarrow 22 ci-dessous.
+streamlit==1.52.2
 pandas==2.3.3
 numpy==2.3.5
 scikit-learn==1.7.2
@@ -11,9 +13,10 @@ plotly==6.3.0
 joblib==1.5.2
 openpyxl==3.1.5
 # pyarrow 22.0.0 = premiere version avec wheels precompiles cp314 ; evite la
-# compilation depuis les sources (echec cmake) si Streamlit Cloud deploie en
-# Python 3.14. Wheels disponibles aussi pour 3.11/3.12/3.13. Requis au runtime
-# par Streamlit (serialisation Arrow de st.dataframe).
+# compilation depuis les sources (echec cmake) quand Streamlit Cloud deploie en
+# Python 3.14. Wheels aussi pour 3.11/3.12/3.13. Requis au runtime par Streamlit
+# (serialisation Arrow de st.dataframe). NB : exige streamlit>=1.52 (cf. ci-dessus),
+# car streamlit 1.51 plafonnait pyarrow<22 -> ResolutionImpossible sinon.
 pyarrow==22.0.0
 # Note : les deux modeles sont 100 % scikit-learn
 #   - regression : HistGradientBoostingRegressor
