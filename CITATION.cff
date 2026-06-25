@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "Si vous utilisez ce logiciel, merci de le citer comme suit."
+title: "LOGI-PREDICT"
+abstract: >-
+  Application web d'aide à la décision logistique : recalibrage de l'ETA
+  et classification de la durée de transit, à partir de modèles
+  d'apprentissage automatique entraînés sur des données e-commerce
+  nigérianes (dataset synthétique Electric Sheep Africa, Hugging Face).
+type: software
+authors:
+  - family-names: "OURIZ"
+    given-names: "Narjisse"
+year: 2026
+license: GPL-3.0
+url: "https://github.com/narjis-5/predict_web"
+repository-code: "https://github.com/narjis-5/predict_web"
