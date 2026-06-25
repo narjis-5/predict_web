@@ -1,0 +1,122 @@
+{
+  "model": "HistGradientBoosting",
+  "best_params": {
+    "learning_rate": 0.2,
+    "max_iter": 200,
+    "max_leaf_nodes": 31,
+    "min_samples_leaf": 100,
+    "l2_regularization": 5.0,
+    "random_state": 42
+  },
+  "weather_enabled": true,
+  "test_MAE": 1.98678903732206,
+  "test_RMSE": 2.2789354728524485,
+  "test_R2": 0.7512924316984426,
+  "naive_R2": 0.6394265570630473,
+  "delay_R2": 0.0006040278979964064,
+  "n_train": 317198,
+  "n_test": 79300,
+  "temporal_validation": {
+    "MAE": 1.978859675799112,
+    "RMSE": 2.2739787341596314,
+    "R2": 0.7506661313992669,
+    "naive_R2": 0.6353405744998907,
+    "train_start": "2024-01-01",
+    "train_end": "2024-08-28",
+    "test_start": "2024-08-28",
+    "test_end": "2024-10-27",
+    "n_train": 317198,
+    "n_test": 79300
+  },
+  "risk_rule_metrics": {
+    "base_rate": 0.6291424968474149,
+    "default_threshold_days": 0.0,
+    "default_precision": 0.6291424968474149,
+    "default_recall": 1.0,
+    "default_f1": 0.7723603037363284,
+    "default_false_alarm_rate": 0.999999999999966,
+    "default_confusion_matrix": {
+      "tn": 0,
+      "fp": 29409,
+      "fn": 0,
+      "tp": 49891
+    },
+    "roc_auc": 0.5095425403011875,
+    "pr_auc": 0.6441020885097324,
+    "diagnostic_best_f1_threshold_days": 1.0244363469729603,
+    "diagnostic_best_f1_precision": 0.629150430648558,
+    "diagnostic_best_f1_recall": 1.0,
+    "diagnostic_best_f1": 0.772366282219986,
+    "diagnostic_best_f1_false_alarm_rate": 0.9999659968036655,
+    "diagnostic_best_f1_confusion_matrix": {
+      "tn": 1,
+      "fp": 29408,
+      "fn": 0,
+      "tp": 49891
+    },
+    "interpretation": "Diagnostic only: a high F1 can be inflated by the high base rate. ROC-AUC near 0.5 means the rule does not discriminate individual ETA exceedances."
+  },
+  "scientific_conclusion": "Les donnees disponibles permettent surtout de recalibrer l'ETA. La regle de risque doit etre lue comme un indicateur operationnel de priorisation, pas comme un detecteur fiable de retards individuels.",
+  "permutation_importance": [
+    {
+      "variable": "estimated_transit_days",
+      "chute_R2": 1.4759758372087772
+    },
+    {
+      "variable": "shipping_cost_ngn",
+      "chute_R2": 6.040678446905812e-05
+    },
+    {
+      "variable": "dest_temperature_2m_mean",
+      "chute_R2": 5.421683898750492e-05
+    },
+    {
+      "variable": "dest_windspeed_10m_max",
+      "chute_R2": 2.611120811664887e-05
+    },
+    {
+      "variable": "ship_day_of_week",
+      "chute_R2": 2.4558020596754382e-05
+    },
+    {
+      "variable": "destination_city",
+      "chute_R2": 1.5078636807830392e-05
+    },
+    {
+      "variable": "ship_month",
+      "chute_R2": 4.9510011787730806e-06
+    },
+    {
+      "variable": "orig_temperature_2m_mean",
+      "chute_R2": 1.395092536752666e-06
+    },
+    {
+      "variable": "supplier_name",
+      "chute_R2": -5.290354955704106e-06
+    },
+    {
+      "variable": "origin_city",
+      "chute_R2": -6.218133979459435e-06
+    },
+    {
+      "variable": "logistics_company",
+      "chute_R2": -3.3117106979988854e-05
+    },
+    {
+      "variable": "orig_windspeed_10m_max",
+      "chute_R2": -3.737255729885369e-05
+    },
+    {
+      "variable": "quantity",
+      "chute_R2": -3.938039823784637e-05
+    },
+    {
+      "variable": "orig_precipitation_sum",
+      "chute_R2": -6.004508037430837e-05
+    },
+    {
+      "variable": "dest_precipitation_sum",
+      "chute_R2": -0.00011292642056600262
+    }
+  ]
+}

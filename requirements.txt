@@ -1,0 +1,17 @@
+# LOGI-PREDICT — dependances de l'application Streamlit (app.py)
+# Versions epinglees sur l'environnement ayant servi a creer les bundles.
+# IMPORTANT : scikit-learn doit rester en 1.7.2, version exacte ayant servi a
+# entrainer/serialiser les deux bundles .joblib. Un autre numero majeur/mineur
+# peut faire echouer le chargement (InconsistentVersionWarning -> erreur).
+streamlit==1.51.0
+pandas==2.3.3
+numpy==2.3.5
+scikit-learn==1.7.2
+plotly==6.3.0
+joblib==1.5.2
+openpyxl==3.1.5
+pyarrow==21.0.0
+# Note : les deux modeles sont 100 % scikit-learn
+#   - regression : HistGradientBoostingRegressor
+#   - classification : LogisticRegression
+# Ni xgboost ni lightgbm ne sont requis (app.py ne les importe pas).

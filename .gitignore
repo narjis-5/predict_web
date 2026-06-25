@@ -1,0 +1,46 @@
+# ==== Donnees lourdes (NE PAS publier) ====
+# Dataset complet (~9 Mo) : non necessaire au lancement, les bundles suffisent.
+nigerian_retail_and_ecommerce_supply_chain_logistics_data.parquet
+*.parquet
+# On garde quand meme l'echantillon weather_cache si on le souhaite : decommenter pour exclure
+# weather_cache.parquet
+
+# Gros CSV de predictions / exports (si presents)
+logipredict_predictions.csv
+*.csv
+# ...mais on PUBLIE l'exemple de schema et les petites tables de resultats :
+!data_example.csv
+!ml_academique/tables/*.csv
+!report_assets/tables/*.csv
+
+# ==== Documents du memoire (lourds, non lies a l'app) ====
+*.docx
+~$*.docx
+
+# ==== Logs / artefacts ====
+*.log
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# ==== Environnements virtuels / outils ====
+.venv/
+venv/
+env/
+.env
+.DS_Store
+Thumbs.db
+
+# ==== Raccourcis Windows ====
+*.lnk
+
+# ==== Editeur / IDE local ====
+.claude/
+.vscode/
+.idea/
+
+# ==== NOTE : les deux bundles sont PETITS et REQUIS -> ils ne sont PAS ignores
+#   delivery_duration_model_bundle.joblib        (~146 Ko)
+#   delivery_duration_class_model_bundle.joblib  (~6 Ko)
+# Si un jour un .joblib depasse 25 Mo, l'ajouter explicitement ici et passer par Git LFS.
