@@ -10,7 +10,11 @@ scikit-learn==1.7.2
 plotly==6.3.0
 joblib==1.5.2
 openpyxl==3.1.5
-pyarrow==21.0.0
+# pyarrow 22.0.0 = premiere version avec wheels precompiles cp314 ; evite la
+# compilation depuis les sources (echec cmake) si Streamlit Cloud deploie en
+# Python 3.14. Wheels disponibles aussi pour 3.11/3.12/3.13. Requis au runtime
+# par Streamlit (serialisation Arrow de st.dataframe).
+pyarrow==22.0.0
 # Note : les deux modeles sont 100 % scikit-learn
 #   - regression : HistGradientBoostingRegressor
 #   - classification : LogisticRegression
