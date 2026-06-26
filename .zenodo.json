@@ -1,0 +1,20 @@
+{
+  "title": "LOGI-PREDICT: Machine-Learning Decision Support for E-Commerce Delivery-Time Performance",
+  "description": "Web decision-support application for e-commerce delivery-time performance: estimated-time-of-arrival (ETA) recalibration through regression and transit-duration class prediction through classification, built from machine-learning models trained on a synthetic Nigerian e-commerce logistics dataset (Electric Sheep Africa, Hugging Face).",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "OURIZ, Narjisse"
+    }
+  ],
+  "keywords": [
+    "machine learning",
+    "last-mile logistics",
+    "delivery-time prediction",
+    "decision support"
+  ],
+  "license": "GPL-3.0-or-later",
+  "access_right": "open",
+  "version": "1.0.0",
+  "publication_date": "2026-06-26"
+}
