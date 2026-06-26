@@ -9,12 +9,17 @@ d'apprentissage automatique entraîné sur des données e-commerce nigérianes.
 > scientifique assumé : sur ce jeu de données, l'écart à l'ETA est un bruit largement
 > irréductible (voir la section « Lecture scientifique » plus bas).
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20892821.svg)](https://doi.org/10.5281/zenodo.20892821)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 ![Python](https://img.shields.io/badge/python-3.10%2B-blue)
 [![Streamlit App](https://img.shields.io/badge/Streamlit-app%20en%20ligne-ff4b4b)](https://predictweb-d4jlpwxvkuw9njztmtjcrz.streamlit.app/)
 
 🔗 **Application en ligne (déployée sur Streamlit Community Cloud) :**
 <https://predictweb-d4jlpwxvkuw9njztmtjcrz.streamlit.app/>
+
+📌 **Pour citer ce travail :** OURIZ, Narjisse (2026). *LOGI-PREDICT: Machine-Learning
+Decision Support for E-Commerce Delivery-Time Performance*. Zenodo.
+DOI : [10.5281/zenodo.20892821](https://doi.org/10.5281/zenodo.20892821)
 
 ---
 
